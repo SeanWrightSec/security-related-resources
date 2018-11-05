@@ -1,4 +1,5 @@
 # Web Related
+## Intercepting Proxies
 [OWASP Zed Attack Proxy (ZAP)](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 
 [Burp Suite Proxy](https://portswigger.net/burp)
