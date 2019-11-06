@@ -55,12 +55,18 @@ Search for:
 
 The following code will disable CA validation (i.e. trust any signed certificate):
 ```java
+SSLContextBuiler sslContextBuilder = SSLContexts.custom();
 sslContextBuilder.loadTrustMaterial(new TrustAllStrategy());
+SSLContext sslContext = sslContextBuilder.build();
+SSLConnectionSocketFactory sslContextFactory = SSLConnectionSocketFactor(sslContext, SSLConnectionSocketFactory.getDefaultHostnameVerifier());
 ```
 
 The following code will trust all self-signed certificates:
 ```java
+SSLContextBuiler sslContextBuilder = SSLContexts.custom();
 sslContextBuilder.loadTrustMaterial(new TrustSelfSignedStrategy());
+SSLContext sslContext = sslContextBuilder.build();
+SSLConnectionSocketFactory sslContextFactory = SSLConnectionSocketFactor(sslContext, SSLConnectionSocketFactory.getDefaultHostnameVerifier());
 ```
 
 The code will look something similar to(https://stackoverflow.com/questions/2703161/how-to-ignore-ssl-certificate-errors-in-apache-httpclient-4-0):
