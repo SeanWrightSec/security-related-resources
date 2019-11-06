@@ -48,8 +48,20 @@ try {
 
 ### Apache HttpClient
 Search for:
+* TrustAllStrategey
+* TrustSelfSignedStrategy
 * NoopHostnameVerifier
 * AllowAllHostnameVerifier
+
+The following code will disable CA validation (i.e. trust any signed certificate):
+```java
+sslContextBuilder.loadTrustMaterial(new TrustAllStrategy());
+```
+
+The following code will trust all self-signed certificates:
+```java
+sslContextBuilder.loadTrustMaterial(new TrustSelfSignedStrategy());
+```
 
 The code will look something similar to(https://stackoverflow.com/questions/2703161/how-to-ignore-ssl-certificate-errors-in-apache-httpclient-4-0):
 ```java
