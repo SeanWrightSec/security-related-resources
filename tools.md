@@ -1,3 +1,15 @@
+# Open Source Intel (OSInt)
+
+[recon-ng](https://github.com/lanmaster53/recon-ng)
+
+[Sublist3r](https://github.com/aboul3la/Sublist3r)
+
+[datasploit](https://github.com/DataSploit/datasploit)
+
+[Shodan](https://www.shodan.io/)
+
+[Censys](https://censys.io/)
+
 # Web Related
 ## Intercepting Proxies
 [OWASP Zed Attack Proxy (ZAP)](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) - Being an OWASP Project, this is entrirely free. It also has ability to scan for common vulnerabilities.
