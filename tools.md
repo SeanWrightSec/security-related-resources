@@ -10,6 +10,18 @@
 
 [Censys](https://censys.io/)
 
+# TLS
+
+[Qualys SSL Labs](https://www.ssllabs.com/ssltest/)
+
+[ImmuniWeb](https://www.immuniweb.com/ssl/)
+
+[testssl.sh](https://testssl.sh/)
+
+[sslscan](https://github.com/rbsec/sslscan/)
+
+[sslyze](https://github.com/nabla-c0d3/sslyze)
+
 # Web Related
 ## Intercepting Proxies
 [OWASP Zed Attack Proxy (ZAP)](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) - Being an OWASP Project, this is entrirely free. It also has ability to scan for common vulnerabilities.
@@ -27,7 +39,7 @@
 
 [Mobile-Security-Framework(MobSF)](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
-[immuniweb](https://www.immuniweb.com/mobile/)
+[ImmuniWeb](https://www.immuniweb.com/mobile/)
 
 # Training
 [OWASP Security Knowledge Framework](https://www.owasp.org/index.php/OWASP_Security_Knowledge_Framework)
