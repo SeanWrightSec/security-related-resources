@@ -4,10 +4,7 @@
 
 [Burp Suite Proxy](https://portswigger.net/burp)- One of the most common tools used by those penetration testing web applications. Comes in 2 versions:
 * Community Edition
-* Professional Edition - The biggest differences to the community edition include:
-** The ability to perform scans for common vulnerabilities
-** The ability to save projects
-** Some plugins will only work with the Professional Edition
+* Professional Edition - The biggest differences to the community edition include the ability to perform scans for common vulnerabilities, the ability to save projects and some plugins will only work on the Professional Edition.
 
 ## Dynamic Application Scanning
 [Netsparker](https://www.netsparker.com/)
