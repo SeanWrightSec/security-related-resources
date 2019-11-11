@@ -4,6 +4,11 @@
 
 [Burp Suite Proxy](https://portswigger.net/burp)
 
+## Dynamic Application Scanning
+[Netsparker](https://www.netsparker.com/)
+
+[Burp Suite Enterprise](https://portswigger.net/burp/enterprise)
+
 # Training
 [OWASP Security Knowledge Framework](https://www.owasp.org/index.php/OWASP_Security_Knowledge_Framework)
 
