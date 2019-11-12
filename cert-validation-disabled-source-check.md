@@ -73,7 +73,7 @@ SSLConnectionSocketFactory sslContextFactory = SSLConnectionSocketFactor(sslCont
 To ignore hostname validation, the code will look something similar to(https://stackoverflow.com/questions/2703161/how-to-ignore-ssl-certificate-errors-in-apache-httpclient-4-0):
 ```java
 CloseableHttpClient httpClient = HttpClients.custom()
-                                	    .setHostnameVerifier(AllowAllHostnameVerifier.INSTANCE)
+                                	    .setSSLHostnameVerifier(AllowAllHostnameVerifier.INSTANCE)
                                 	    .build();
 ```
 Or
