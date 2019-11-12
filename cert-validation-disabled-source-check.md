@@ -8,21 +8,21 @@ The following code is used to disable CA validation of a certificate:
 ```java
 try { 
 	SSLContext sslContext = SSLContext.getInstance("SSL");
-
-	// set up a TrustManager that trusts everything
-	sslContext.init(TrustManager[] trustAllTrustManager = new TrustManager[] {
+	
+	// set up a TrustManager that trusts certificates signed by any CA
+	TrustManager[] trustAllTrustManager = {
 		new X509TrustManager() {
-			public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+			public X509Certificate[] getAcceptedIssuers() {
 				return null;
 			}
 			
-			@Override
-			public void checkClientTrusted(X509Certificate[] chain, String authType) {}
+			public void checkClientTrusted(X509Certificate[] chain, String authType) { }
 
-			@Override
-			public void checkServerTrusted(X509Certificate[] chain, String authType){}
+			public void checkServerTrusted(X509Certificate[] chain, String authType) { }
 		}
-	});
+	};
+	
+	sslContext.init(null, trustAllTrustManager, new SecureRandom());
 } catch(Exception exception) {
 	exception.printStackTrace();
 }
