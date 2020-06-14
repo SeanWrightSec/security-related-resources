@@ -7,7 +7,7 @@ Repository to contain resources which are useful from a security point of view.
 
 ## Other
 
-* [Certificate Validation Cheetsheat ](./cert-validation-disabled-source-check.md)
+* [Certificate Validation Cheat Sheet ](./cert-validation-disabled-source-check.md)
 
 ## Recommended Blogs
 
